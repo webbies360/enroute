@@ -1,0 +1,39 @@
+.Page{
+    display: inline-block;
+}
+
+.pagination{
+
+    .page-item{
+
+        @media (max-width: 768px) {
+            a{
+                padding: 12px !important;
+            }
+        }
+        
+        a{
+            padding: 20px;
+            background-color: $primary-color-1;
+            border-color: $default-color;
+            color: $default-color;
+
+            &:hover{
+                opacity: 0.8;
+            }
+        }
+
+
+        .page-item:first-child .page-link {
+            border-top-left-radius: 0rem;
+            border-bottom-left-radius: 0rem;    
+        }
+
+        .page-item:last-child .page-link {
+            border-top-right-radius: 0rem;
+            border-bottom-right-radius: 0rem;
+        }
+
+    }
+
+}

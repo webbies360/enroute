@@ -1,0 +1,18 @@
+
+@import "headers";
+@import "footers";
+
+.section-title{
+    margin: 40px 0px;
+    text-align: center;
+
+    span{
+        width: 2.7em;
+        height: 2.7em;
+        padding: 10px 14px;
+        background: $primary-color-1;
+        color: $default-color;
+        border-radius: 50%;
+        
+    }
+}

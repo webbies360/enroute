@@ -1,0 +1,12 @@
+@import "variable";
+
+//Base Style
+
+@media (max-width: 768px) {
+    .logo{
+        width: 50%;
+    }
+    .quick-contact{
+        display: none;
+    }
+}

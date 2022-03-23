@@ -1,0 +1,217 @@
+@import "variable";
+
+//Form Style one
+
+.form-style-one{
+
+    .form-control{
+        display: block;
+        width: 100%;
+        // height: calc(1.5em + 0.75rem + 2px);
+        padding: 0.775rem 0.75rem;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5;
+        color: #495057;
+        background-color: #fafafa;
+        background-clip: padding-box;
+        border: 1px solid #ced4da;
+        border-radius: 0em;
+        transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+        
+        &:focus{
+            
+            outline: none !important;
+            box-shadow: none !important;
+          }
+    }
+
+    input::placeholder {
+        color: #ced4da;
+        font-size: 1rem;
+        font-style: italic;
+    }
+
+
+    [type="checkbox"]:checked,
+    [type="checkbox"]:not(:checked) {
+        position: absolute;
+        left: -9999px;
+    }
+    [type="checkbox"]:checked + label,
+    [type="checkbox"]:not(:checked) + label
+    {
+        position: relative;
+        padding-left: 28px;
+        cursor: pointer;
+        line-height: 20px;
+        display: inline-block;
+        color: #666;
+    }
+    [type="checkbox"]:checked + label:before,
+    [type="checkbox"]:not(:checked) + label:before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 18px;
+        height: 18px;
+        border: 1px solid #ced4da;
+        background: #fafafa;
+    }
+    [type="checkbox"]:checked + label:after,
+    [type="checkbox"]:not(:checked) + label:after {
+        content: '';
+        width: 8px;
+        height: 8px;
+        background: $primary-color-1;
+        position: absolute;
+        top: 5px;
+        left: 5px;
+        -webkit-transition: all 0.2s ease;
+        transition: all 0.2s ease;
+    }
+    [type="checkbox"]:not(:checked) + label:after {
+        opacity: 0;
+        -webkit-transform: scale(0);
+        transform: scale(0);
+    }
+    [type="checkbox"]:checked + label:after {
+        opacity: 1;
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+
+
+
+
+
+
+    .btn {
+        background-color: $primary-color-1 !important;
+        color: #fff;
+        padding: 12px 40px;
+        border-radius: 0em;
+        border: none;
+        transition: opacity .5s ease-out;
+        -moz-transition: opacity .5s ease-out;
+        -webkit-transition: opacity .5s ease-out;
+
+        &:hover{
+            opacity: 0.8;
+        }
+
+    }
+
+}
+
+
+.form-style-two{
+
+    .form-control{
+        display: block;
+        width: 100%;
+        // height: calc(1.5em + 0.75rem + 2px);
+        padding: 1.45rem 0.75rem;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5;
+        color: #495057;
+        background-color: #fafafa;
+        background-clip: padding-box;
+        border: 1px solid #ced4da;
+        border-radius: 1.375em;
+        transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+        
+        &:focus{
+            
+            outline: none !important;
+            box-shadow: none !important;
+          }
+    }
+
+    input::placeholder {
+        color: #ced4da;
+        font-size: 1rem;
+        font-style: italic;
+    }
+
+    .btn {
+        background-color: $primary-color-1 !important;
+        color: #fff;
+        padding: 12px 40px;
+        border-radius: 1.375em;
+        border: none;
+        transition: opacity .5s ease-out;
+        -moz-transition: opacity .5s ease-out;
+        -webkit-transition: opacity .5s ease-out;
+
+        &:hover{
+            opacity: 0.8;
+        }
+
+    }
+
+}
+
+
+.form-style-three{
+
+    .form-control{
+        display: block;
+        width: 100%;
+        // height: calc(1.5em + 0.75rem + 2px);
+        padding: 25px 15px;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5;
+        color: #495057;
+        background-color: #fafafa;
+        background-clip: padding-box;
+        border: 1px solid #ced4da;
+
+        transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+        
+        &:focus{
+            
+            outline: none !important;
+            box-shadow: none !important;
+          }
+    }
+
+    input::placeholder {
+        color: #ced4da;
+        font-size: 1rem;
+        font-style: italic;
+    }
+
+    .btn {
+        background-color: $primary-color-1 !important;
+        color: #fff;
+        padding: 15px 40px;
+        border: none;
+        transition: opacity .5s ease-out;
+        -moz-transition: opacity .5s ease-out;
+        -webkit-transition: opacity .5s ease-out;
+
+        &:hover{
+            opacity: 0.8;
+        }
+
+    }
+
+}
+
+.form-style-four{
+    @extend .form-style-three;
+    .col-form-label{
+        text-transform: uppercase;
+        font-size: 0.825em;
+        font-weight: 600;
+    }
+
+    .btn { 
+        text-transform: uppercase;
+        font-weight: 600;
+    }
+}

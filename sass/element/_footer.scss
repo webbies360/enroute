@@ -1,0 +1,604 @@
+@import"variable";
+
+//Footer Style one
+.style-one{
+    background-color: $secondary-color-2;
+    
+    h1,h2,h3,h4,h5,h6{
+        text-transform: uppercase;
+        color: #fff;
+    }
+
+    p, label{
+        text-transform: initial;
+    }
+
+
+}
+
+//Footer Style two
+.style-two{
+    background-color: $primary-color-1;
+    
+    h1,h2,h3,h4,h5,h6{
+        text-transform: uppercase;
+        color: #fff;
+    }
+
+    p, label{
+        text-transform: initial;
+    }
+
+
+}
+
+.footer-one{
+    @extend .style-one;
+    border-radius: 0px;
+    color: #c0c3ca;
+
+    .our-company, .industy-solution{
+
+        ul{
+            li {
+                list-style: none;
+                padding-left: 1.3em;
+                text-transform: initial;
+                
+    
+                a{
+                    color: #c0c3ca;
+                    text-decoration: none;
+
+                    &:hover{
+                        opacity: 0.8;
+                    }
+                }
+                
+              }
+              li:before {
+                content: "\f054";
+                font-family: "Font Awesome 5 Free";
+                font-weight: 900;
+                display: inline-block;
+                margin-left: -3.6em; 
+                width: 1.3em;
+                
+                
+              }
+        }
+    
+
+    }
+
+   
+    .newsletter{
+
+        input[type='email']{
+            width: 80%;
+            border-radius: 0.25rem 0rem 0rem 0.25rem;
+            background-color:rgba(255,255,255,0.5);
+            border: none;
+            float: left;
+
+            &::placeholder {
+                font-style: italic;
+            }
+            
+        }
+
+        .btn{
+            background-color: $primary-color-1;        
+            border-radius: 0px 0.25rem 0.25rem 0px;
+            float: left;
+            border-color: $primary-color-1;
+        
+        }
+
+    }
+
+    .contact-us{
+        text-transform: initial;
+        
+        .address{
+            padding-bottom: 0.3125rem;
+        }
+
+        .phone{
+            padding: 0.3125rem 0rem;
+            color: $default-color;
+            font-size: 1.3rem;
+        }
+
+        .social-media{
+
+            margin-left: -2.5rem; 
+            margin-top: 1.0rem; 
+
+            li {
+                list-style: none;
+                margin-right: 0.434rem; 
+                text-transform: initial;
+                display: inline-block;
+
+                a{
+                    color: $secondary-color-2;
+                    text-decoration: none;
+                    margin-right: 0.434rem; 
+                    padding: 0.834rem; 
+                    background-color:rgba(255,255,255,0.5);
+                    border-radius: 0.25rem;
+
+                    &:hover{
+                        background-color: $default-color;
+                    }
+                  
+                }
+                
+            }
+              
+
+        }
+
+
+        .email{
+            padding: 0.3125rem 0rem;
+        }
+    }
+
+    .bottom{
+        margin-top: 20px;
+        padding-top: 10px;
+        border-top: 1px solid #c0c3ca;
+        font-weight: 600;
+        font-size: 12px;
+
+        .bottom-left{
+            text-align: left;
+        }
+
+        .bottom-right{
+            text-align: right;
+        }
+
+        @media (max-width: 768px) {
+            .bottom-right{
+                text-align: left !important;
+            }
+        }
+    }
+
+    
+    
+}
+
+
+.footer-two{
+    @extend .style-two;
+    border-radius: 0px;
+    color: $default-color;
+
+    .our-company, .industy-solution{
+
+        ul{
+            li {
+                list-style: none;
+                padding-left: 1.3em;
+                text-transform: initial;
+                
+    
+                a{
+                    color: $default-color;
+                    text-decoration: none;
+
+                    &:hover{
+                        opacity: 0.8;
+                    }
+                }
+                
+              }
+              li:before {
+                content: "\f054";
+                font-family: "Font Awesome 5 Free";
+                font-weight: 900;
+                display: inline-block;
+                margin-left: -3.6em; 
+                width: 1.3em;
+                
+                
+              }
+
+              .social-media{
+                color: $primary-color-1 !important;
+              }
+        }
+    
+
+    }
+
+   
+    .newsletter{
+
+        input[type='email']{
+            width: 80%;
+            border-radius: 0.25rem 0rem 0rem 0.25rem;
+            background-color:rgba(255,255,255,0.5);
+            border: none;
+            float: left;
+
+            &::placeholder {
+                font-style: italic;
+            }
+            
+        }
+
+        .btn{
+            background-color: $secondary-color-2;
+            border-radius: 0px 0.25rem 0.25rem 0px;
+            float: left;
+            border-color: $secondary-color-2;
+        
+        }
+
+    }
+
+    .contact-us{
+        text-transform: initial;
+        
+        .address{
+            padding-bottom: 0.3125rem;
+        }
+
+        .phone{
+            padding: 0.3125rem 0rem;
+            color: $default-color;
+            font-size: 1.3rem;
+        }
+
+        .social-media{
+
+            margin-left: -2.5rem; 
+            margin-top: 1.0rem; 
+
+            li {
+                list-style: none;
+                margin-right: 0.434rem; 
+                text-transform: initial;
+                display: inline-block;
+
+                a{
+                    color: $secondary-color-2;
+                    text-decoration: none;
+                    margin-right: 0.434rem; 
+                    padding: 0.834rem; 
+                    background-color:rgba(255,255,255,0.5);
+                    border-radius: 0.25rem;
+
+                    &:hover{
+                        background-color: $default-color;
+                    }
+                  
+                }
+                
+            }
+              
+
+        }
+
+
+        .email{
+            padding: 0.3125rem 0rem;
+        }
+    }
+
+    .bottom{
+        margin-top: 20px;
+        padding-top: 10px;
+        border-top: 1px solid #c0c3ca;
+        font-weight: 600;
+        font-size: 12px;
+
+        .bottom-left{
+            text-align: left;
+            padding-top: 20px;
+        }
+
+        .bottom-right{
+            text-align: right;
+            padding-top: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .bottom-right{
+                text-align: left !important;
+            }
+        }
+    }
+
+    
+    
+}
+
+.footer-three{
+    @extend .style-one;
+    border-radius: 0px;
+    color: #c0c3ca;
+
+    .our-company, .industy-solution{
+
+        ul{
+            li {
+                list-style: none;
+                padding-left: 1.3em;
+                text-transform: initial;
+                
+    
+                a{
+                    color: #c0c3ca;
+                    text-decoration: none;
+
+                    &:hover{
+                        opacity: 0.8;
+                    }
+                }
+                
+              }
+              li:before {
+                content: "\f054";
+                font-family: "Font Awesome 5 Free";
+                font-weight: 900;
+                display: inline-block;
+                margin-left: -3.6em; 
+                width: 1.3em;
+                
+                
+              }
+        }
+    
+
+    }
+
+   
+    .newsletter{
+
+        input[type='email']{
+            width: 80%;
+            border-radius: 0.25rem 0rem 0rem 0.25rem;
+            background-color:rgba(255,255,255,0.5);
+            border: none;
+            float: left;
+
+            &::placeholder {
+                font-style: italic;
+            }
+            
+        }
+
+        .btn{
+            background-color: $primary-color-1;        
+            border-radius: 0px 0.25rem 0.25rem 0px;
+            float: left;
+            border-color: $primary-color-1;
+        
+        }
+
+        .back-to-top{
+            text-align: right;
+            
+            
+            .icon{
+                margin-top: 80px;
+
+                a{
+                    
+                    background-color:rgba(255,255,255,0.5);
+                    color: $secondary-color-2;    
+                    padding: 0.834rem; 
+                    border-radius: 0.25rem;
+
+                    &:hover{
+                        background-color: $default-color;
+                    }
+                }
+               
+            }
+            
+        }
+
+    }
+
+    .company-info{
+        text-transform: initial;
+        
+        .about{
+            padding-bottom: 0.3125rem;
+        }
+
+        .phone{
+            padding: 0.3125rem 0rem;
+            color: $default-color;
+            font-size: 1.3rem;
+        }
+
+
+        .email{
+            padding: 0.3125rem 0rem;
+        }
+    }
+
+    .bottom{
+        margin-top: 20px;
+        padding-top: 10px;
+        border-top: 1px solid #c0c3ca;
+        font-weight: 600;
+        font-size: 12px;
+
+        .bottom-left{
+            text-align: left;
+            .social-media{
+
+                margin-left: -2.5rem; 
+                margin-top: 1.0rem; 
+
+                li {
+                    list-style: none;
+                    margin-right: 0.434rem; 
+                    text-transform: initial;
+                    display: inline-block;
+
+                    a{
+                        color: $secondary-color-2;
+                        text-decoration: none;
+                        margin-right: 0.434rem; 
+                        padding: 0.834rem; 
+                        background-color:rgba(255,255,255,0.5);
+                        border-radius: 0.25rem;
+
+                        &:hover{
+                            background-color: $default-color;
+                        }
+                    
+                    }
+                    
+                }
+                
+
+            }
+        }
+
+        .bottom-right{
+            text-align: right;
+            padding-top: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .bottom-right{
+                text-align: left !important;
+            }
+        }
+    }
+
+    
+    
+}
+
+
+.footer-four{
+    @extend .style-two;
+    border-radius: 0px;
+    color: $default-color;
+
+    .top{
+        text-align: center;
+        text-transform: initial;
+        padding: 60px 0px;
+
+        p{
+            color: $primary-color-4;
+        }
+
+        .btn{
+            background-color: $default-color !important;
+            text-transform: uppercase;
+            font-weight: 600;
+            color: $primary-color-1;
+            padding: 15px 40px;
+
+            &:hover{
+                transition-duration: 0.5s;
+                transform: translateY(-.1rem);
+            }
+        }
+    }
+
+    .middle{
+        margin-top: 20px;
+        padding-top: 10px;
+        border-top: 1px solid #c0c3ca;
+        font-weight: 600;
+        font-size: 14px;
+        text-transform: initial;
+
+        
+
+        .middle-left{
+            text-align: left;
+            padding-top: 20px;
+
+            .quick-links{
+                margin-left: -2.5rem; 
+
+                li{
+                    display: inline-block;
+                    
+                    a{
+                        color: $default-color;
+                        padding-right: 5px;
+                        text-decoration: none;
+
+                        &:hover{
+                            opacity: 0.6;
+                        }
+                    }
+                }
+            }
+
+        }
+
+        .middle-center{
+            text-align: center;
+            padding-top: 20px;
+        }
+
+        .middle-right{
+            text-align: right;
+            padding-top: 20px;
+
+           
+            .social-media{
+
+                margin-left: -2.5rem; 
+
+                li {
+                    list-style: none;
+                    margin-right: 0.434rem; 
+                    text-transform: initial;
+                    display: inline-block;
+
+                    a{
+                        color: $primary-color-1;
+                        text-decoration: none;
+                        margin-right: 0.434rem; 
+                        padding: 0.834rem; 
+                        background-color:rgba(255,255,255,0.5);
+                        border-radius: 0.25rem;
+
+                        &:hover{
+                            background-color: $default-color;
+                        }
+                    
+                    }
+                    
+                }
+                
+
+            }
+        }
+
+        @media (max-width: 768px) {
+            .middle-right{
+                text-align: center !important;
+            }
+        }
+    }
+
+    .bottom{
+        font-size: 14px;
+        font-weight: 600;
+        text-align: center;
+        text-transform: initial;
+        padding-top: 40px;
+    }
+    
+    
+}

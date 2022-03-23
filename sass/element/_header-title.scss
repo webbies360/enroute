@@ -1,0 +1,37 @@
+@import "variable";
+
+//Header Title
+
+.header-title{
+    font-weight: 500;
+    font-family: $font-varela;
+    padding-bottom: 0em !important;
+    color: $primary-color-1;
+
+    &::before{
+        position: absolute;
+        width: 1.875em;
+        content: '';
+        border-top: 0.125em solid $primary-color-7;
+        top: 0.063em;
+        
+    }
+}
+
+.header-title-two{
+    font-weight: 100;
+    font-family: $font-varela;
+    padding-bottom: 0em !important;
+    color: $primary-color-1;
+
+    &::before{
+        position: absolute;
+        width: 1.875em;
+        content: '';
+        border-top: 0.125em solid $primary-color-7;
+        top: 0.063em;
+        left: 50%;
+        transform: translate(-50%);
+        
+    }
+}

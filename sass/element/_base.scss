@@ -1,0 +1,77 @@
+@import "variable";
+
+//Base Style
+
+html{
+    
+
+    body{
+        line-height: 1.68421053em;
+        font-weight: 400;
+        font-size: 1.125em !important;
+        color: $secondary-color-1;
+        
+    }
+
+    h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+        font-weight: 100;
+    }
+
+    
+    
+    .center{
+        text-align: center;
+        margin: 0 auto;
+    }
+    
+    .left{
+        text-align: left;
+    }
+    
+    .right{
+        text-align: right;
+    }
+
+    .vert-margin-top{
+        margin-top: 0.750em;
+    }
+
+    .vert-padding-sm{
+        padding: 0.750em 0em;
+    }
+
+    .vert-margin-sm{
+        margin-top: 1.750em;
+        margin-bottom: 1.750em;
+    }
+
+    .vert-margin-md{
+        margin-top: 3.750em;
+        margin-bottom: 3.750em;
+    }
+
+    .zero-padding{
+        padding: 0px !important;
+    }
+
+    .default-color{
+        color: $default-color;
+    }
+
+    @media (min-width: 768px) {
+
+        .hori-space{
+            margin: 0em 3.750em !important;
+        }
+
+    }
+
+  
+
+}
+
